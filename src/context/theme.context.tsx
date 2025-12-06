@@ -1,10 +1,11 @@
 import { createContext, useState } from "react";
-interface IThemeContextInteface {
+
+interface IThemeContextInterface {
   darkMode: boolean;
   toggleDarkMode: () => void;
 }
 
-export const ThemeContext = createContext<IThemeContextInteface>({
+export const ThemeContext = createContext<IThemeContextInterface>({
   darkMode: false,
   toggleDarkMode: () => {},
 });
@@ -16,9 +17,10 @@ interface IThemeContextProviderProps {
 const ThemeContextProvider = ({ children }: IThemeContextProviderProps) => {
   const [darkMode, setDarkMode] = useState<boolean>(false);
 
-  const toggleDarkMode = () => {
+  const toggleDarkMode: () => void = () => {
     setDarkMode((prevState) => !prevState);
   };
+
   return (
     <ThemeContext.Provider value={{ darkMode, toggleDarkMode }}>
       {children}
