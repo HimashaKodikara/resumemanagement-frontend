@@ -3,6 +3,7 @@ import { Box } from "@mui/material";
 import { DataGrid, GridColDef } from "@mui/x-data-grid";
 import moment from "moment";
 import { IJob } from "../../types/global.typing";
+import "./JobsGrid.scss";
 
 const column: GridColDef[] = [
   { field: "id", headerName: "ID", width: 100 },

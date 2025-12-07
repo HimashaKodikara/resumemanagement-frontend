@@ -1,5 +1,8 @@
 .companis-grid {
   * {
     color: var(--text-color1);
+    * {
+      color: var(--text-color1);
+    }
   }
 }

@@ -5,6 +5,7 @@ import moment from "moment";
 import { ICandidate } from "../../types/global.typing";
 import { baseUrl } from "../../constants/url.constants";
 import { PictureAsPdf } from "@mui/icons-material";
+import "./CandidatesGrid.scss";
 
 const column: GridColDef[] = [
   { field: "id", headerName: "ID", width: 100 },
