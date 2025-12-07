@@ -26,3 +26,23 @@ export interface ICreateJobDto {
     
 }
 
+export interface ICandidate{
+    id:string;
+    firstName: string;
+    lastName: string;
+    email: string;
+    phone: string;
+    coverLetter: string;
+    resumeUrl: string;
+    jobId: string;
+    jobTitle: string;
+}
+
+export interface ICreateCandidateDto {
+   firstName: string;
+   lastName: string;
+   email: string;
+   phone: string;
+   coverLetter: string;
+   jobId: string;
+}
